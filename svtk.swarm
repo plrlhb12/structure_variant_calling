@@ -1,0 +1,23 @@
+#!/bin/bash/
+# run the task of pe-test and sr-test
+
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_pe.sh psomagen
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_pe.sh jax
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_re.sh jax
+
+
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_annotate.sh long_merged_normed.vcf
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_annotate.sh KOLF2-ARID2-A2.diploidSV.vcf.gz
+cd /data/CARD/tprojects/projects/sv-manta/svtk_kolf2; bash svtk_annotate.sh GT19-38445.diploidSV.vcf.gz
+
+
+
+# below are execulate command
+# swarm -f svtk.swarm -g 100 -t 8 --module svtk --time 8:00:00 --gres=lscratch:10
+2423766
+sacct 
+sjobs
+skill
+
+
+2461988
